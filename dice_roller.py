@@ -47,7 +47,6 @@ for die in range(number_dice):
     dice.append(value)
     total += value
 
-    # Print the dice face
     for line in dice_faces[value]:
         print(line)
     print()  # Blank line between dice
