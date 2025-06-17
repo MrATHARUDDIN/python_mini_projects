@@ -12,13 +12,14 @@ def add():
 
 def show_task():
     if(TotalTask > 0):
-        for index, Task in enumerate(Task, start=1):
-            print(f"Task {index}: ",Task)
+        for index, Tasks in enumerate(Task, start=1):
+            print(f"Task {index}: ",Tasks)
     else:
         print("No Task Founded")
 
 def remove():
      show_task()
+     
 
 
 while(condition):
