@@ -1,0 +1,1 @@
+chose = int(input("Enter your Chose"))
