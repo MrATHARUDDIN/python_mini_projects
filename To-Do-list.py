@@ -1,9 +1,9 @@
-chose = int(input("Enter your Chose"))
 Task = []
+num = int(input("How many tasks do you want to add? "))
 
-ADD = input("Enter The task you want to add ")
-Task.append(ADD)
+for i in range(num):
+    ADD = input(f"Enter task {i + 1}: ")
+    Task.append(ADD)
 
-for tasks in Task:
-    print(tasks)
-
+for index, Task in enumerate(Task, start=1):
+    print(f"Task {index}: ",Task)
