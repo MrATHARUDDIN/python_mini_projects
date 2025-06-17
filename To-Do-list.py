@@ -19,7 +19,7 @@ def show_task():
 
 def remove():
      show_task()
-     index = int(input("Enter the element You wanna delete"))-1
+     index = int(input("Enter the element You wanna delete : "))-1
      if 0 <= index:
         remove_elemet= Task.pop(index)
         print(f"{remove_elemet} has been deleted")
