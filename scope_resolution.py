@@ -1,6 +1,8 @@
 # variable scope = where a variable is visiable and accessible
 # scope resolution = (LEGB) local -> Enclosed -> GLobal -> Built-in
 
+from math import e # Built in variable
+
 b=2
 def fun1():
     a=1
