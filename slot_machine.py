@@ -1,24 +1,27 @@
 import random
 
 
-
-payout_multipliers = {
-    "🍒": 2,
-    "🍉": 3,
-    "🍋": 5,
-    "🔔": 10,
-    "⭐": 20
-}
-
 def spin_row():
    symbols = ["🍒", "🍉", "🍋", "🔔", "⭐"]
    return [random.choice(symbols) for _ in range(3)]
 
-def print_row():
-    pass
-
-def payout():
-    pass
+def print_row(row):
+    print("************************")
+    print(" / ".join(row))
+    print("************************")
+def payout(row,bet):
+    if row[0] == row[1] == row[2]:
+        if row[0] == "🍒":
+            return bet*3
+        if row[0] == "🍉":
+            return bet*5
+        if row[0] == "🍋":
+            return bet*10
+        if row[0] == "🔔":
+            return bet*15
+        if row[0] == "⭐":
+            return bet*20
+    return 0
 
 def main():
     balance = 100
@@ -46,8 +49,14 @@ def main():
             continue
         balance -= bet
         row = spin_row()
-        print(row)
-        
+        print_row(row)
+        winnings = payout(row, bet)
+
+        if winnings > 0:
+            print(f"🎉 You won ${winnings}!")
+            balance += winnings
+        else:
+            print("😢 Sorry, you lost this round.")
     print("💸 Game Over! You ran out of money.")
 
 if __name__ == "__main__":
