@@ -4,7 +4,11 @@ questions = (
     ("Which crypto is known as Digital Gold? : "),
     ("Minimum age limit to smoke cigarettes? : "),
     ("Who is the richest man right now? : "),
-    ("What is the Best Programming language to start over")
+    ("What is the Best Programming language to start over"),
+     ("What planet is known as the Red Planet? : "),
+    ("Which country invented pizza? : "),
+    ("What is the boiling point of water at sea level (°C)? : "),
+    ("Who wrote the Harry Potter books? : "),
 )
 
 options = (
@@ -13,10 +17,14 @@ options = (
     ("A. Bitcoin", "B. Ethereum", "C. DogeCoin", "D. Litecoin"),
     ("A. 16", "B. 18", "C. 21", "D. 25"),
     ("A. Elon Musk", "B. Jeff Bezos", "C. Jon Cina", "D. Bill Gates"),
-    ("A. C", "B. C++", "C. Java", "D. Python")
+    ("A. C", "B. C++", "C. Java", "D. Python"),
+      ("A. Venus", "B. Mars", "C. Jupiter", "D. Saturn"),
+    ("A. France", "B. USA", "C. Italy", "D. Greece"),
+    ("A. 50", "B. 90", "C. 100", "D. 120"),
+    ("A. J.K. Rowling", "B. Stephen King", "C. Roald Dahl", "D. Suzanne Collins"),
 )
 
-answers = ("B", "A", "A", "B", "A","D")
+answers = ("B", "A", "A", "B", "A","D", "B", "C", "C", "A")
 
 guesses = []
 score = 0
