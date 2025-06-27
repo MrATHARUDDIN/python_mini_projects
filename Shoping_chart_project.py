@@ -4,7 +4,7 @@ foods = []
 prices = []
 total = 0
 
-
+ 
 while True:
     food = str(input("Enter a food to buy (Enter q to exist ) : "))
     if(food.lower() == "q"):
